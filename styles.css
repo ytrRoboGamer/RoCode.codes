@@ -1,0 +1,105 @@
+body{
+  font-family: Arial;
+}
+button{
+  cursor: pointer;
+}
+button:hover, a:hover{
+  filter: brightness(80%);
+}
+button:active, a:active{
+  filter: brightness(70%);
+}
+
+
+.topBar{
+  position: absolute;
+  width: 100%;
+  height: 75px;
+  background-color: black;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+
+.langButton{
+  position: absolute;
+  height: 55px;
+  top: 10px;
+  width: 120px;
+  border-radius: 0;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+  font-family: Arial;
+}
+.langButton0{
+  right: 10px;
+}
+.langButton1{
+  left: 10px;
+}
+
+
+.barItems{
+  justify-self: center;
+}
+
+.barItem{
+  color: white;
+  font-size: 25px;
+  font-family: Arial;
+  text-decoration: none;
+  font-style: italic;
+}
+.dots{
+  display: inline;
+  color: white;
+  margin: 0 30px;
+}
+
+
+.welcomeMessage{
+  font-size: 50px;
+  text-align: center;
+  justify-self: center;
+  width: 800px;
+  min-width: 500px;
+  padding: 50px 30px;
+  border: 6px solid black;
+  border-radius: 60px;
+}
+
+.green{
+  color: rgb(16, 255, 16);
+}
+.green2{
+  color: rgb(66, 167, 66);
+}
+.green3{
+  color: rgb(0, 196, 0);
+}
+.blue{
+  color: rgb(0, 0, 177);
+}
+.BOLD{
+  font-weight: 900;
+  font-size: 60px;
+}
+
+
+.divs{
+  justify-self: center;
+  margin-top: 300px;
+  width: 500px;
+}
+.ulTitle{
+  font-size: 20px;
+  font-weight: 700;
+}
+li{
+margin-top: 20px;
+}
