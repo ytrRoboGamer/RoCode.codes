@@ -23,11 +23,25 @@ const lang = {
 
   lessonsTitle: ['Available Lessons', 'الدروس المتاحة'],
 
-  lessons1: ['', ''],
-  lessons2: ['', ''],
-  lessons3: ['', ''],
-  lessons4: ['', ''],
-  lessons5: ['', ''],
+  lessons1: [
+    'Websites Designing HTML + CSS <img class="miniImg" src="images/html.jpg"> <img class="miniImg" src="images/css.jpg">',
+    'تصميم مواقع HTML + CSS <img class="miniImg" src="images/html.jpg"> <img class="miniImg" src="images/css.jpg">'
+  ],
+
+  lessons2: [
+    'Websites Programming Javascript <img class="miniImg" src="images/javascript.jpg">',
+    'برمجة مواقع Javascript <img class="miniImg" src="images/javascript.jpg">'
+  ],
+
+  lessons3: [
+    'Python <img class="miniImg" src="images/python.jpg">',
+    'بايثون Python <img class="miniImg" src="images/python.jpg">'
+  ],
+
+  lessons4: [
+    'Batch files basics <img class="miniImg" src="images/bat.jpg">',
+    'أساسيات ملفات باتش Batch files <img class="miniImg" src="images/bat.jpg">'
+  ],
 
 
   infoTitle: ['Details About Lessons', 'معلومات عن الدروس'],
