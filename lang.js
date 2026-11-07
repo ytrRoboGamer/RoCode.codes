@@ -15,19 +15,40 @@ const lang = {
   ],
 
 
-  barItem1: ['information', 'معلومات'],
-  barItem2: ['prices', 'الأسعار'],
-  barItem3: ['contact us', 'تواصل معنا'],
+  barItem2: ['lessons', 'الدروس'],
+  barItem3: ['information', 'معلومات'],
+  barItem1: ['prices', 'الأسعار'],
+  barItem4: ['contact us', 'تواصل معنا'],
+
+
+  lessonsTitle: ['Available Lessons', 'الدروس المتاحة'],
+
+  lessons1: ['', ''],
+  lessons2: ['', ''],
+  lessons3: ['', ''],
+  lessons4: ['', ''],
+  lessons5: ['', ''],
 
 
   infoTitle: ['Details About Lessons', 'معلومات عن الدروس'],
 
+  info1: ['', ''],
+  info2: ['', ''],
+  info3: ['', ''],
+  info4: ['', ''],
+  info5: ['', ''],
 
 
-  pricesTitle: ['Lesson Prices', 'أسعار الدروس'],
+  prices1: ['Lessons cost 3.500 KD each', 'السعر هو 3.500 دينار كويتي لكل درس'],
+  prices2: ['Each lesson is ~45 minutes long', 'مدة الدرس الواحد ~45 دقيقة'],
 
 
+  contactTitle: ['How To Contact Us', 'طريقة التواصل معنا'],
 
-  contactTitle: ['How To Contact Us', 'طريقة التواصل معنا']
+  contact1: ['', ''],
+  contact2: ['', ''],
+  contact3: ['', ''],
+  contact4: ['', ''],
+  contact5: ['', '']
 
-}
+};

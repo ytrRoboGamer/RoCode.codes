@@ -3,15 +3,27 @@ const html = document.querySelector('html');
 
 const langButton = document.querySelector('.langButton');
 
-const barItem1 = document.querySelector('.barItem1');
-const barItem2 = document.querySelector('.barItem2');
-const barItem3 = document.querySelector('.barItem3');
+const barItems = [
+  document.querySelector('.barItem1'),
+  document.querySelector('.barItem2'),
+  document.querySelector('.barItem3'),
+  document.querySelector('.barItem4')
+];
 
 const welcomeMessage = document.querySelector('.welcomeMessage');
 
+const prices1 = document.querySelector('.prices1');
+const prices2 = document.querySelector('.prices2');
+
 const infoTitle = document.querySelector('.infoTitle');
-const pricesTitle = document.querySelector('.pricesTitle');
+const info = document.querySelectorAll('.info');
+
+const lessonsTitle = document.querySelector('.lessonsTitle');
+const lessons = document.querySelectorAll('.lessons');
+
 const contactTitle = document.querySelector('.contactTitle');
+const contact = document.querySelectorAll('.contact');
+
 
 let selectedLang = JSON.parse(localStorage.getItem('selectedLang')) || 0;
 
@@ -20,18 +32,32 @@ html.dir = lang.dir[selectedLang];
 html.lang = lang.lang[selectedLang];
 title.innerHTML = lang.title[selectedLang];
 
-infoTitle.innerHTML = lang.infoTitle[selectedLang];
-pricesTitle.innerHTML = lang.pricesTitle[selectedLang];
-contactTitle.innerHTML = lang.contactTitle[selectedLang];
-
 langButton.innerHTML = lang.langButton[selectedLang];
-langButton.classList.replace('langButtonNum', `langButton${selectedLang}`);
 
-barItem1.innerHTML = lang.barItem1[selectedLang];
-barItem2.innerHTML = lang.barItem2[selectedLang];
-barItem3.innerHTML = lang.barItem3[selectedLang];
+barItems.forEach((value, index) => {
+  value.innerHTML = lang[`barItem${index+1}`][selectedLang];
+});
 
 welcomeMessage.innerHTML = lang.welcomeMessage[selectedLang];
+
+prices1.innerHTML = lang.prices1[selectedLang];
+prices2.innerHTML = lang.prices2[selectedLang];
+
+infoTitle.innerHTML = lang.infoTitle[selectedLang];
+info.forEach((value) => {
+  value.innerHTML = lang[value.classList.toString().split(' ')[1]][selectedLang];
+});
+
+lessonsTitle.innerHTML = lang.lessonsTitle[selectedLang];
+lessons.forEach((value) => {
+  value.innerHTML = lang[value.classList.toString().split(' ')[1]][selectedLang];
+});
+
+contactTitle.innerHTML = lang.contactTitle[selectedLang];
+contact.forEach((value) => {
+  value.innerHTML = lang[value.classList.toString().split(' ')[1]][selectedLang];
+});
+
 
 
 langButton.addEventListener('click', () => {
