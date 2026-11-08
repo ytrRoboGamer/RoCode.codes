@@ -10,7 +10,7 @@ const barItems = [
   document.querySelector('.barItem4')
 ];
 
-const welcomeMessage = document.querySelector('.welcomeMessage');
+const welcomeTxt = document.querySelector('.welcomeTxt');
 
 const prices1 = document.querySelector('.prices1');
 const prices2 = document.querySelector('.prices2');
@@ -32,13 +32,13 @@ html.dir = lang.dir[selectedLang];
 html.lang = lang.lang[selectedLang];
 title.innerHTML = lang.title[selectedLang];
 
-langButton.innerHTML = lang.langButton[selectedLang];
-
 barItems.forEach((value, index) => {
-  value.innerHTML = lang[`barItem${index+1}`][selectedLang];
+  value.innerHTML = lang[`barItem${index + 1}`][selectedLang];
 });
 
-welcomeMessage.innerHTML = lang.welcomeMessage[selectedLang];
+welcomeTxt.innerHTML = lang.welcomeTxt[selectedLang];
+
+langButton.innerHTML = lang.langButton[selectedLang];
 
 prices1.innerHTML = lang.prices1[selectedLang];
 prices2.innerHTML = lang.prices2[selectedLang];
