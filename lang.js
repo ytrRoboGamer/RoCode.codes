@@ -72,7 +72,7 @@ const lang = {
   ],
 
 
-  prices1: ['Lessons cost 3.500 KD each', 'السعر هو 3.500 دينار كويتي لكل درس'],
+  prices1: ['Lessons cost 2.500 KD each', 'السعر هو 2.500 دينار كويتي لكل درس'],
   prices2: ['Each lesson is ~45 minutes long', 'مدة الدرس الواحد ~45 دقيقة'],
 
 
